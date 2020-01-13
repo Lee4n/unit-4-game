@@ -1,0 +1,56 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#name {
+    margin: 10px;
+    padding: 25px 0px;
+    background: orange;
+    color: white;
+    text-align: center;
+    width: 310px;
+    font-size: 35px;
+}
+
+#ranNum {
+    margin: 10px;
+    padding: 25px 0px;
+    background: green;
+    color: purple;
+    text-align: center;
+    width: 310px;
+    font-size: 35px;
+}
+
+#score {
+    margin: 10px;
+    padding: 25px 0px;
+    background: orange;
+    color: white;
+    text-align: center;
+    width: 310px;
+    font-size: 35px;
+}
+
+#totalScore {
+    margin: 10px;
+    padding: 25px 0px;
+    background: blue;
+    color: white;
+    text-align: center;
+    width: 310px;
+    font-size: 35px;
+    overflow: hidden;
+}
+
+.gem {
+    border: 1px solid red;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
