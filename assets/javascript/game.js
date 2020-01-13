@@ -17,7 +17,7 @@ var gem2 = Math.floor(Math.random() * 12 + 1);
 var gem3 = Math.floor(Math.random() * 12 + 1);
 var gem4 = Math.floor(Math.random() * 12 + 1);
 
-// click on each gem to reveal a value
+// click on each gem to reveal a value and push value to total score
 $("#gem1").on("click", function() {
     totalScore = totalScore + gem1;
     $("#totalScore").text(totalScore);
@@ -34,6 +34,29 @@ $("#gem4").on("click", function() {
     totalScore = totalScore + gem4;
     $("#totalScore").text(totalScore);
 });
+
+// reset the game
+function setLabels() {
+    ranNum = Math.floor(Math.random() * (120 - 19) + 19);
+    totalScore = 0;
+    gem1 = Math.floor(Math.random() * 12 + 1);
+    gem2 = Math.floor(Math.random() * 12 + 1);
+    gem3 = Math.floor(Math.random() * 12 + 1);
+    gem4 = Math.floor(Math.random() * 12 + 1);
+}
+
+//set conditions for scoring
+if (totalScore === ranNum) {
+    wins++;
+    setLabels();
+}
+else if (totalScore > ranNum) {
+    losses++;
+    setLabels();
+}
+// show scores
+$("#wins").text("Wins: " + wins);
+$("#losses").text("Losses: " + losses);
 
 
 
